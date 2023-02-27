@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="expance.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="main" class="card card-body">
+                <h2 class="title">Add EXPANCES</h2>
+                <form id="addForm" class="form-inline mb-3">
+                    <label for="amount">Choose Expance Amount:</label><br>
+                    <input type="text" class="form-control mr-2" id="amount" >
+                    <label for="discription">choose Discription:</label><br>
+                    <input type="text" class="form-control mr-2" id="discription">
+                    <label for="categery">Choose Catagery:</label><br>
+                    <select class="form-control mr-2" id="categery">
+                        <option value="Movies">Movies</option>
+                        <option value="Food">Food</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="submit" class="btn btn-dark" value="Add Expance">
+                </form>
+                <h2 class="title">EXPANCES</h2>
+                <ul id="expances" class="list-group">
+                </ul>
+            </div>
+
+        </div>
+        <script src="expance.js"></script>
+    </body>
